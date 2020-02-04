@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("fonts/lighter.ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("fonts/regular.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("fonts/semibold.ttf");
+  font-weight: 500; }
+
+.label-switch {
+  border-radius: 24px;
+  cursor: pointer;
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 48px; }
+  .label-switch input[type="checkbox"] {
+    display: none; }
+    .label-switch input[type="checkbox"] + .checkbox {
+      background: #e8e8e8;
+      border: 0;
+      border-radius: 24px;
+      cursor: pointer;
+      height: 24px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      transition: all 0.3s ease;
+      width: 48px;
+      z-index: 0; }
+      .label-switch input[type="checkbox"] + .checkbox::before {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        background: white;
+        border-radius: 24px;
+        content: "";
+        height: 20px;
+        transform: scale(1);
+        transition: all 0.3s ease;
+        width: 44px;
+        z-index: 1; }
+      .label-switch input[type="checkbox"] + .checkbox::after {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 20px;
+        height: 20px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+        content: "";
+        transition: all 0.3s ease;
+        z-index: 2; }
+    .label-switch input[type="checkbox"]:checked + .checkbox {
+      background: #37a000; }
+      .label-switch input[type="checkbox"]:checked + .checkbox::before {
+        transform: scale(0); }
+      .label-switch input[type="checkbox"]:checked + .checkbox::after {
+        left: 26px; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 50px 0;
+  margin: 0;
+  background: #f9f9f9;
+  color: #494949; }
+
+p {
+  margin: 0; }
+
+a {
+  outline: none;
+  color: #37a000;
+  text-decoration: none; }
+
+.link {
+  cursor: pointer;
+  color: #37a000; }
+
+.tmedium {
+  font-weight: 500; }
+
+.tlight {
+  color: #989898; }
+
+.tgrey {
+  color: #797979; }
+
+.tdark {
+  color: #585858; }
+
+.tsmall {
+  font-size: 95%; }
+
+.container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto; }
+
+.content, .sidebar {
+  float: left;
+  display: inline-block; }
+
+.content {
+  width: 600px; }
+
+.sidebar {
+  width: 250px;
+  margin-right: 20px; }
+  .sidebar .meta {
+    padding: 0 0 0 3px; }
+
+.block {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  margin-bottom: 5px; }
+  .block h1.heading, .block h2.heading, .block h3.heading, .block h4.heading {
+    margin: 0 0 20px; }
+
+.content {
+  padding: 20px 30px; }
+
+.job {
+  border-top: 1px solid #f3f3f3;
+  padding: 20px 10px;
+  overflow: auto; }
+  .job.unread {
+    background: #fffef1; }
+  .job .description {
+    margin-top: 20px; }
+  .job .client-info {
+    font-weight: 500;
+    margin-top: 10px; }
+    .job .client-info .payment {
+      margin-right: 20px; }
+    .job .client-info .location {
+      margin-left: 20px; }
+    .job .client-info .spent {
+      margin-left: 20px; }
+    .job .client-info .rating .fa-star {
+      color: #dedede; }
+      .job .client-info .rating .fa-star.active {
+        color: #37a000; }
+  .job .skills {
+    overflow: auto;
+    margin-top: 20px; }
+    .job .skills .skill-tag {
+      cursor: default;
+      margin-bottom: 6px;
+      padding: 1px 10px;
+      float: left;
+      margin-right: 5px;
+      line-height: 25px;
+      font-size: 12px;
+      border-radius: 10px;
+      background: #f7f7f7;
+      color: #8a8a8a; }
+      .job .skills .skill-tag:hover {
+        color: #5d5d5d;
+        background: #eaeaea; }
+
+.job-title {
+  margin: 0 0 5px;
+  font-size: 19px;
+  font-weight: 500; }
+
+.fa-check-circle.verified {
+  font-size: 19px;
+  color: #14bff4;
+  position: relative;
+  top: 1px; }
+
+form#settings .form-group {
+  margin-bottom: 5px;
+  padding: 4px 0;
+  display: flex;
+  justify-content: space-between; }
+  form#settings .form-group label {
+    line-height: 24px; }
+    form#settings .form-group label:first-child {
+      margin-right: 8px; }
+  form#settings .form-group select {
+    height: 24px; }
+
+form#settings hr {
+  font-weight: 300;
+  border: none;
+  margin: 10px 0;
+  border-bottom: 1px solid #dedede; }
+
+.mb-0 {
+  margin-bottom: 0; }
