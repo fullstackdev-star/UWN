@@ -2334,6 +2334,7 @@
 
 	            var results = response.data.results;
 
+	            bkg.console.log("totalJobs - ", results);
 	            var myJobs = [];
 	            var i = void 0;
 	            for (i = 0; i < results.length; i++) {
