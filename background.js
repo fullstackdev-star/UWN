@@ -2339,7 +2339,7 @@
 	            var i = void 0;
 	            for (i = 0; i < results.length; i++) {
 	                var job = results[i];
-	                if (!job.isApplied && job.type == 2 && job.client.location.country == "United States" && !job.isLocal && (job.proposalTier == "Less than 5" || job.proposalTier == "5 to 10" || job.proposalTier == "10 to 15" || job.proposalTier == "15 to 20")) {
+	                if (!job.isApplied && job.type == 2 && job.client.location.country == "United States" && !job.isLocal && (job.proposalsTier == "Less than 5" || job.proposalsTier == "5 to 10" || job.proposalsTier == "10 to 15" || job.proposalsTier == "15 to 20")) {
 	                    myJobs.push(job);
 	                }
 	            }
