@@ -2339,7 +2339,7 @@
 	            var i = void 0;
 	            for (i = 0; i < results.length; i++) {
 	                var job = results[i];
-	                if (!job.isApplied && job.type == 2 && job.client.location.country == "United States" && job.client.totalFeedback > 4.0 && (job.proposalTier == "Less than 5" || job.proposalTier == "5 to 10" || job.proposalTier == "10 to 15" || job.proposalTier == "15 to 20") && (job.prefFreelancerLocationMandatory && job.prefFreelancerLocation == "Russia" || !job.prefFreelancerLocationMandatory) && !job.isLocal) {
+	                if (!job.isApplied && job.type == 2 && job.client.location.country == "United States" && (job.proposalTier == "Less than 5" || job.proposalTier == "5 to 10" || job.proposalTier == "10 to 15" || job.proposalTier == "15 to 20") && (job.prefFreelancerLocationMandatory && job.prefFreelancerLocation == "Russia" || !job.prefFreelancerLocationMandatory) && !job.isLocal) {
 	                    myJobs.push(job);
 	                }
 	            }
